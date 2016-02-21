@@ -1,0 +1,23 @@
+{
+  "apps": [{
+
+    "name"  : "Thing.",
+    "script": "bin/prod.js",
+
+    "env_production": {
+      NODE_ENV: "production"
+    }
+
+  }],
+
+  "deploy": {
+    "production": {
+      "user"       : "pm2",
+      "host"       : "sigsev.io",
+      "ref"        : "origin/master",
+      "repo"       : "git@github.com:meriadec/Thing.git",
+      "path"       : "/var/www/thing",
+      "post-deploy": "npm prune && npm i && npm run build && NODE_ENV=production NODE_PATH=$NODE_PATH:./src pm2 startOrRestart ecosystem.json --env production"
+    }
+  }
+}
