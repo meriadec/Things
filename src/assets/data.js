@@ -13,6 +13,21 @@ const data = [
     img: 'coco.jpg',
     title: 'Packed Thing',
     desc: 'Liquid thing. Handy. Awesome.'
+  },
+  {
+    img: 'kinder.jpg',
+    title: 'Opened paper',
+    desc: 'Before? Closed thing. Now? Not closed. Poetism.'
+  },
+  {
+    img: 'phone.jpg',
+    title: 'Mimetism of the present. Purity of life.',
+    desc: 'Talking. Seeing. Absolute.'
+  },
+  {
+    img: 'chocolate.jpg',
+    title: 'Chocolated',
+    desc: 'Purposed. Animated. Looking from the present to future.'
   }
 ]
 
