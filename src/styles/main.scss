@@ -43,11 +43,25 @@ body {
   justify-content: center;
 }
 
+.loader-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .Thing-loader {
   width: 40px;
   height: 5px;
   background: rgba(0, 0, 0, 0.4);
   animation: 1s linear rotating infinite;
+}
+
+.Thing-loader-yolo {
+  width: 40px;
+  height: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  animation: 1.5s linear rotating infinite;
 }
 
 @keyframes rotating {

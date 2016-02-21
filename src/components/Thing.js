@@ -12,9 +12,7 @@ class Thing extends Component {
     const img = new Image()
     img.onload = () => {
       if (this.isUnmounted) { return }
-      setTimeout(() => {
-        this.setState({ loaded: true })
-      }, 2e3)
+      this.setState({ loaded: true })
     }
     img.src = `/assets/img/${data.img}`
   }
@@ -41,7 +39,12 @@ class Thing extends Component {
           )
           : (
             <div className='Thing-placeholder'>
-              <div className='Thing-loader' />
+              <div className='loader-wrapper'>
+                <div className='Thing-loader' />
+              </div>
+              <div className='loader-wrapper'>
+                <div className='Thing-loader-yolo' />
+              </div>
             </div>
           )}
       </div>
