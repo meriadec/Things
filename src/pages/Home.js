@@ -4,6 +4,15 @@ import Gallery from 'components/Gallery'
 
 class Home extends Component {
 
+  state = {
+    handed: false
+  }
+
+  handy = (e) => {
+    e.preventDefault()
+    this.setState({ handed: true })
+  }
+
   render () {
     return (
       <div>
@@ -17,6 +26,17 @@ class Home extends Component {
         <section className='main-actions'>
           <Gallery />
         </section>
+        <footer className='footer'>
+          {this.state.handed
+            ? (
+              <span>{'Thing.'}</span>
+            )
+            : (
+              <a href='' onClick={this.handy}>
+                {'WTF did I just read?'}
+              </a>
+            )}
+        </footer>
       </div>
     )
   }
