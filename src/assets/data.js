@@ -15,6 +15,16 @@ const data = [
     desc: 'Liquid thing. Handy. Awesome.'
   },
   {
+    img: 'packet.jpg',
+    title: 'Packet of things',
+    desc: 'Can be opened, and closed. Not at the same time.'
+  },
+  {
+    img: 'bird.jpg',
+    title: 'Eyed animal',
+    desc: 'Bird. Fly. Flying. Flying thing.'
+  },
+  {
     img: 'kinder.jpg',
     title: 'Opened paper',
     desc: 'Before? Closed thing. Now? Not closed. Poetism.'
@@ -25,9 +35,19 @@ const data = [
     desc: 'Talking. Seeing. Absolute.'
   },
   {
+    img: 'hear.jpg',
+    title: 'Sound Thing',
+    desc: 'Musical strings, for hearing purposes'
+  },
+  {
+    img: 'key.jpg',
+    title: 'Openers',
+    desc: 'Very handy. Make sounds. Sound thing too.'
+  },
+  {
     img: 'chocolate.jpg',
     title: 'Chocolated',
-    desc: 'Purposed. Animated. Looking from the present to future.'
+    desc: 'Purposed. Looking from the present to future.'
   }
 ]
 
