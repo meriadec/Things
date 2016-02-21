@@ -2,7 +2,8 @@ export default {
 
   env: 'production',
 
-  apiPort: 3051,
+  port: 3051,
+  apiPort: 3000,
   apiUrl: '/api'
 
 }
