@@ -14,9 +14,9 @@ body {
 
 .Thing {
   & + & {
-    margin-top: 7em;
+    margin-top: 5vw;
   }
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
   position: relative;
   display: flex;
@@ -24,6 +24,7 @@ body {
   align-items: center;
   img {
     display: block;
+    max-width: 100%;
   }
 }
 
